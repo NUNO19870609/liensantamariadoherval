@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mensagem enviada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9f9ee;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    a {
+      margin-top: 20px;
+      color: #fa4616;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Obrigado pelo contato!</h1>
+  <p>Recebemos sua mensagem e responderemos em breve.</p>
+  <a href="/">Voltar para o site</a>
+</body>
+</html>
