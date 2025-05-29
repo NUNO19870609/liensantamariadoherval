@@ -7,6 +7,98 @@
   <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/0936a9b6120744bb732e687f4ba1374b.css">
   <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/c161055a2c126fe975e3c161c8647b2e.css">
   <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/377e1985909b4dac34c6775c307050cf.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotham-Book', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .lien-logo-home img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    .hero-lien .container.full {
+      height: auto;
+      min-height: calc(100vh - 87px);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .text-box h1 {
+      font-size: 2em;
+      color: white;
+    }
+
+    .text-box h3 {
+      font-size: 1.2em;
+      color: white;
+    }
+
+    #form-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    #form-contact input,
+    #form-contact textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    #form-contact button {
+      padding: 10px;
+      font-size: 1.1em;
+      background-color: orange;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-lien .container.full {
+        padding: 20px;
+        background-position: center center;
+      }
+
+      .text-box h1 {
+        font-size: 1.5em;
+      }
+
+      .text-box h3 {
+        font-size: 1em;
+      }
+
+      .lien-logo-home img {
+        max-width: 120px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="lien-header">
@@ -14,18 +106,18 @@
       <a href="#" class="lien-logo-home">
         <img id="logo-lien-top" src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-top-1.svg" alt="Logo Lien">
       </a>
-      <div style="margin-left:auto; font-family: 'Gotham-Book', sans-serif; font-size:1.13em; color:#56565a; padding-top:16px;">
-        <span style="font-size: 1.5em; color: orange;">FRANQUIA SANTA MARIA DO HERVAL</span>
+      <div style="margin-left:auto; font-size:1em; color:#56565a; padding-top:16px;">
+        <span style="font-size: 1.2em; color: orange;">FRANQUIA SANTA MARIA DO HERVAL</span>
       </div>
     </div>
   </header>
 
   <section class="hero-lien">
-    <div class="container full" style="background: url('https://liencorretora.com.br/wp-content/uploads/2025/01/home-banner.webp') center/cover no-repeat; height: calc(100vh - 87px); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div class="container full" style="background: url('https://liencorretora.com.br/wp-content/uploads/2025/01/home-banner.webp') center/cover no-repeat;">
       <div class="text-box">
         <div class="top">
           <span class="left">
-            <img src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-title.svg" alt="White logo LIEN">
+            <img src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-title.svg" alt="White logo LIEN" style="max-width: 100%;">
             <span class="text-right">
               <h1 class="home-title">GARANTIA DE UM FUTURO SEGURO</h1>
             </span>
@@ -39,8 +131,8 @@
   </section>
 
   <section id="contato">
-    <div class="container" style="text-align: center;">
-      <h1 class="title" style="color: #000;"><span>Contato</span></h1>
+    <div class="container" style="flex-direction: column;">
+      <h1 class="title" style="color: #000; width: 100%; text-align: center;"><span>Contato</span></h1>
       <form id="form-contact" action="https://formsubmit.co/vendasmegagas@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://nuno19870609.github.io/obrigado/">
@@ -53,14 +145,14 @@
   </section>
 
   <footer style="background-color: #f2f2f2; padding: 30px 0; text-align: center; color: #000;">
-    <div class="container" style="font-size: 1.6em; line-height: 2.8em;">
+    <div class="container" style="flex-direction: column;">
       <p style="font-weight: bold;">
-        <a href="https://maps.google.com/?q=Rua+10+de+Abril,+134,+Centro,+Santa+Maria+do+Herval,+RS" target="_blank" style="color: black; text-decoration: none; font-size: 1.8em;">
+        <a href="https://maps.google.com/?q=Rua+10+de+Abril,+134,+Centro,+Santa+Maria+do+Herval,+RS" target="_blank" style="color: black; text-decoration: none; font-size: 1.3em;">
           Rua 10 de Abril, 134, Centro, Santa Maria do Herval, RS
         </a>
       </p>
       <p style="font-weight: bold;">
-        <a href="https://wa.me/5551997270416" target="_blank" style="color: #000; text-decoration: none; font-size: 1.8em;">
+        <a href="https://wa.me/5551997270416" target="_blank" style="color: #000; text-decoration: none; font-size: 1.3em;">
           (51) 9 9727-0416
         </a>
       </p>
@@ -68,4 +160,3 @@
   </footer>
 </body>
 </html>
-
