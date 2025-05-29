@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIEN | Corretora</title>
-  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/0936a9b6120744bb732e687f4ba1374b.css">
-  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/c161055a2c126fe975e3c161c8647b2e.css">
-  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/377e1985909b4dac34c6775c307050cf.css">
+  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/0936a9b6120744bb732e687f4ba1374b.css" />
+  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/c161055a2c126fe975e3c161c8647b2e.css" />
+  <link rel="stylesheet" href="https://liencorretora.com.br/wp-content/litespeed/css/377e1985909b4dac34c6775c307050cf.css" />
+
+  <style>
+    /* Container responsivo */
+    .container {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    /* Header responsivo */
+    .lien-header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Ajustes de texto */
+    .text-box {
+      text-align: center;
+      padding: 20px;
+      max-width: 90%;
+      word-break: break-word;
+    }
+
+    .home-title {
+      font-size: clamp(1.4rem, 5vw, 2.5rem);
+    }
+
+    footer a {
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .lien-header .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .lien-logo-home {
+        margin-bottom: 10px;
+      }
+
+      .lien-header .container > div {
+        margin-bottom: 10px;
+      }
+
+      footer .container {
+        font-size: 1.1em;
+        line-height: 2em;
+      }
+
+      footer a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="lien-header">
     <div class="container">
       <a href="#" class="lien-logo-home">
-        <img id="logo-lien-top" src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-top-1.svg" alt="Logo Lien">
+        <img id="logo-lien-top" src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-top-1.svg" alt="Logo Lien" />
       </a>
-      <div style="margin-left:auto; font-family: 'Gotham-Book', sans-serif; font-size:1.13em; color:#56565a; padding-top:16px;">
+      <div style="font-family: 'Gotham-Book', sans-serif; font-size: 1.13em; color: #56565a; padding-top: 16px;">
         <span style="font-size: 1.5em; color: orange;">Santa Maria do Herval</span>
       </div>
     </div>
@@ -25,7 +85,7 @@
       <div class="text-box">
         <div class="top">
           <span class="left">
-            <img src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-title.svg" alt="White logo LIEN">
+            <img src="https://liencorretora.com.br/wp-content/themes/acstheme/assets/images/lien-logo-title.svg" alt="White logo LIEN" />
             <span class="text-right">
               <h1 class="home-title">GARANTIA DE UM FUTURO SEGURO</h1>
             </span>
@@ -42,10 +102,10 @@
     <div class="container" style="text-align: center;">
       <h1 class="title" style="color: #000;"><span>Contato</span></h1>
       <form id="form-contact" action="https://formsubmit.co/vendasmegagas@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://nuno19870609.github.io/obrigado/">
-        <input type="text" name="name" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://nuno19870609.github.io/obrigado/" />
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
         <textarea name="message" placeholder="Sua mensagem" required></textarea>
         <button type="submit">Enviar</button>
       </form>
@@ -53,14 +113,14 @@
   </section>
 
   <footer style="background-color: #f2f2f2; padding: 30px 0; text-align: center; color: #000;">
-    <div class="container" style="font-size: 1.6em; line-height: 2.8em;">
+    <div class="container">
       <p style="font-weight: bold;">
-        <a href="https://maps.google.com/?q=Rua+10+de+Abril,+134,+Centro,+Santa+Maria+do+Herval,+RS" target="_blank" style="color: black; text-decoration: none; font-size: 1.8em;">
+        <a href="https://maps.google.com/?q=Rua+10+de+Abril,+134,+Centro,+Santa+Maria+do+Herval,+RS" target="_blank" style="color: black; text-decoration: none;">
           Rua 10 de Abril, 134, Centro, Santa Maria do Herval, RS
         </a>
       </p>
       <p style="font-weight: bold;">
-        <a href="https://wa.me/5551997270416" target="_blank" style="color: #000; text-decoration: none; font-size: 1.8em;">
+        <a href="https://wa.me/5551997270416" target="_blank" style="color: #000; text-decoration: none;">
           (51) 9 9727-0416
         </a>
       </p>
@@ -68,4 +128,3 @@
   </footer>
 </body>
 </html>
-
